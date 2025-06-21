@@ -67,7 +67,7 @@ def generate_audio_with_curl(sentence: str, voice_id: str = "EXAVITQu4vr4xnSDxMa
     try:
         # Write payload to temp file
         with open(payload_file, 'w') as f:
-            json.dump({"text": sentence, "model_id": "eleven_monolingual_v1"}, f)
+            json.dump({"text": sentence, "model_id": "eleven_multilingual_v2"}, f)
         
         # Run curl command with less verbose output, more reliable options
         cmd = [
